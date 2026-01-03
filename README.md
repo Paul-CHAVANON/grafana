@@ -22,7 +22,7 @@ sudo docker compose up -d
 Lancer un docker compose du fichier docker-compose.yml <br/>
 Source : [./grafana_prometheus_config/docker-compose.yml](https://github.com/Paul-CHAVANON/grafana/blob/main/grafana_prometheus_config/docker-compose.yml)
 
-### Installer des exporter
+### Installer des exporter classic
 Lancer les docker compose sur les VMs/Serveurs concernés
 ```
 sudo docker compose up -d
@@ -32,6 +32,23 @@ Pour annalyser des données des VMs/serveurs
 </br></br>Pour annalyser des perfomance GPU Nvidia
 </br>- [./nvidia_gpu_exporter/docker-compose.yml](https://github.com/Paul-CHAVANON/grafana/blob/main/nvidia_gpu_exporter/docker-compose.yml)
 
+### Configurer l'export de metrics Kube
+Récupérer le cetificat et tocken nécessaire sur le master node kube
+```
+sudo cat /var/lib/rancher/k3s/server/tls/server-ca.crt
+sudo cat /var/lib/rancher/k3s/server/node-token
+```
+Puis le configurer dans prometheus
+```
+  - job_name: 'k3s-kubelet'
+    scheme: https
+    bearer_token: "<NODE-TOKEN-HERE>"
+    tls_config:
+ca_file: /etc/prometheus/ca.crt # Récupéré de votre cluster
+insecure_skip_verify: true
+    static_configs:
+- targets: ['192.168.2.13:10250', '192.168.2.14:10250', '192.168.2.15:10250']
+```
 
 ## Dashboard infrastructures
 ### Node Exporter full
