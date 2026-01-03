@@ -3,14 +3,16 @@ Voir fichier LICENSE
 
 # Grafana
 ## Présentation
-Vous trouverez : 
-- Des configuration fonctionelle de Grafana et prometheus avec Docker
-- Des Dashboard socle 
-- Des Dasboard applicatif
+Ce repository est composé en 3 parties
+- Configuration fonctionelle de Grafana et prometheus
+- Dashboard infrastrucure
+- Dasboard applicatif
 
-## Configuration fonctionelle
-Voir
+
+## Configuration fonctionelle de Grafana et prometheus
+
 
 ## Dashboard infrastrucure
+
 
 ## Dasboard applicatif
