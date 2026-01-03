@@ -4,12 +4,12 @@ Voir fichier LICENSE
 # Grafana
 ## Présentation
 Ce repository est composé en 3 parties
-### Configuration fonctionelle de Grafana et prometheus
+- Configuration fonctionelle de Grafana et prometheus
 Explication fonctionelle de grafana et prometheus
 
-### Dashboard infrastrucure
+- Dashboard infrastrucure
 
-### Dasboard applicatif
+- Dasboard applicatif
 
 
 ## Configuration fonctionelle de Grafana et prometheus
