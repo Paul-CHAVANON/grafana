@@ -16,7 +16,7 @@ Ce repository est composé en 3 parties
 Source : https://docs.docker.com/engine/install/ubuntu/
 
 ### Installer Grafana et Prometheus
-```
+``` 
 sudo docker compose up -d
 ```
 Lancer un docker compose du fichier docker-compose.yml <br/>
@@ -39,7 +39,7 @@ sudo cat /var/lib/rancher/k3s/server/tls/server-ca.crt
 sudo cat /var/lib/rancher/k3s/server/node-token
 ```
 Puis le configurer dans prometheus
-```
+```Docker-compose.yml
   - job_name: 'k3s-kubelet'
     scheme: https
     bearer_token: "<NODE-TOKEN-HERE>"
