@@ -20,7 +20,7 @@ Source : https://docs.docker.com/engine/install/ubuntu/
 sudo docker compose up -d
 ```
 Lancer un docker compose du fichier docker-compose.yml <br/>
-Source : ./grafana_prometheus_config/docker-compose.yml
+Source : [./grafana_prometheus_config/docker-compose.yml](https://github.com/Paul-CHAVANON/grafana/blob/main/grafana_prometheus_config/docker-compose.yml)
 
 ### Installer des exporter
 Lancer les docker compose sur les VMs/Serveurs concernés
