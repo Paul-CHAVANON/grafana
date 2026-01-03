@@ -41,15 +41,15 @@ sudo cat /var/lib/rancher/k3s/server/tls/server-ca.crt
 Créer un ServiceAccount et un token
 ```
 # 1. Créer le ServiceAccount
-kubectl create serviceaccount prometheus -n default --dry-run=client -o yaml | kubectl apply -f -
+sudo kubectl create serviceaccount prometheus -n default --dry-run=client -o yaml | kubectl apply -f -
 
 # 2. Créer un ClusterRoleBinding robuste
 # Cela lie le ServiceAccount au rôle 'system:kubelet-api-admin' ou 'view'
-kubectl create clusterrolebinding prometheus-cluster-view \
+sudo kubectl create clusterrolebinding prometheus-cluster-view \
   --clusterrole=cluster-admin \
   --serviceaccount=default:prometheus
 # 3. Créer le token
-kubectl create token prometheus
+sudo kubectl create token prometheus
 ```
 
 
