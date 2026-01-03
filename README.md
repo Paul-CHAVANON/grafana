@@ -27,18 +27,22 @@ Lancer les docker compose sur les VMs/Serveurs concernés
 ```
 sudo docker compose up -d
 ```
-Pour annalyser des perfomance GPU Nvidia
-</br>- [./nvidia_gpu_exporter/docker-compose.yml](https://github.com/Paul-CHAVANON/grafana/blob/main/nvidia_gpu_exporter/docker-compose.yml)
-</br></br>Pour annalyser des données des VMs/serveurs
+Pour annalyser des données des VMs/serveurs
 </br>- [./node_exporter/docker-compose.yml](https://github.com/Paul-CHAVANON/grafana/blob/main/node_exporter/docker-compose.yml)
+</br></br>Pour annalyser des perfomance GPU Nvidia
+</br>- [./nvidia_gpu_exporter/docker-compose.yml](https://github.com/Paul-CHAVANON/grafana/blob/main/nvidia_gpu_exporter/docker-compose.yml)
 
 
 ## Dashboard infrastructures
 ### Node Exporter full
-Permet de connaitre les données de chaques node, réseaux, RAM, CPU, ...
+Permet de connaitre les données de chaques node, réseaux, RAM, CPU, ... <br/>
 Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/1860-node-exporter-full/)
 
+### Nvidia Exporter
+Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/14574-nvidia-gpu-metrics/)
+
 ## Dasboard applicatif
-### rke-cluster-monitoring
-Permet de connaitre les données du cluster Kube, RAM, Pods, ...
-Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/15282-k8s-rke-cluster-monitoring/)
+### Kubernetes cluster
+Permet de connaitre les données du cluster Kube, RAM, Pods, ... <br/>
+Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/15282-k8s-rke-cluster-monitoring/) compatible K8S + K3S
+
