@@ -42,7 +42,7 @@ Puis le configurer dans prometheus
 ```Docker-compose.yml
   - job_name: 'k3s-kubelet'
     scheme: https
-    bearer_token: "<NODE-TOKEN-HERE>"
+    bearer_token: "<NODE-TOKEN-HERE>" # Récupéré de votre cluster
     tls_config:
 ca_file: /etc/prometheus/ca.crt # Récupéré de votre cluster
 insecure_skip_verify: true
