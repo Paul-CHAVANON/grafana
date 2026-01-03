@@ -25,13 +25,11 @@ Lancer les docker compose sur les VMs/Serveurs concernés
 sudo docker compose up -d
 ```
 Pour annalyser des perfomance GPU Nvidia
-- ./nvidia_gpu_exporter/docker-compose.yml
-</br>
-Pour annalyser des données des VMs/serveurs
-- ./node_exporter/docker-compose.yml
-</br>
-Pour annlayser des données Kubernetes
-- ./kube_exporter/docker-compose.yml
+</br>- ./nvidia_gpu_exporter/docker-compose.yml
+</br>Pour annalyser des données des VMs/serveurs
+</br>- ./node_exporter/docker-compose.yml
+</br>Pour annlayser des données Kubernetes
+</br>- ./kube_exporter/docker-compose.yml
 
 
 ## Dashboard infrastructures
