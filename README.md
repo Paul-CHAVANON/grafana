@@ -75,5 +75,5 @@ Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/14574-nv
 ## Dasboard applicatif
 ### Kubernetes cluster
 Permet de connaitre les données du cluster Kube, RAM, Pods, ... <br/>
-Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/15282-k8s-rke-cluster-monitoring/) compatible K8S + K3S
+Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/16450-kubernetes-views-k3s-cluster/) compatible K3S
 
