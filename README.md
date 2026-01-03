@@ -31,11 +31,14 @@ Pour annalyser des perfomance GPU Nvidia
 </br>- [./nvidia_gpu_exporter/docker-compose.yml](https://github.com/Paul-CHAVANON/grafana/blob/main/nvidia_gpu_exporter/docker-compose.yml)
 </br></br>Pour annalyser des données des VMs/serveurs
 </br>- [./node_exporter/docker-compose.yml](https://github.com/Paul-CHAVANON/grafana/blob/main/node_exporter/docker-compose.yml)
-</br></br>Pour annlayser des données Kubernetes
-</br>- [./kube_exporter/docker-compose.yml](https://github.com/Paul-CHAVANON/grafana/blob/main/kube_exporter/docker-compose.yml)
 
 
 ## Dashboard infrastructures
-
+### Node Exporter full
+Permet de connaitre les données de chaques node, réseaux, RAM, CPU, ...
+Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/1860-node-exporter-full/)
 
 ## Dasboard applicatif
+### rke-cluster-monitoring
+Permet de connaitre les données du cluster Kube, RAM, Pods, ...
+Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/15282-k8s-rke-cluster-monitoring/)
