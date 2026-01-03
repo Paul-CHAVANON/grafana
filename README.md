@@ -5,7 +5,9 @@ Voir fichier LICENSE
 ## Présentation
 Ce repository est composé en 3 parties
 - Configuration fonctionelle de Grafana et prometheus
+Explication fonctionelle de grafana et prometheus
 - Dashboard infrastrucure
+  dtest
 - Dasboard applicatif
 
 
