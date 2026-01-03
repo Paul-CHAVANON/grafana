@@ -8,7 +8,7 @@ Ce repository est composé en 3 parties
 
 - "**_Dashboard infrastrucure_**" monitoring de serveurs et infrastructures
 
-- "**_Dasboard applicatif_**" monitoring d'application comme Kubernetes
+- "**_Dashboard Kube_**" 
 
 
 ## Configuration fonctionelle de Grafana et prometheus
@@ -72,8 +72,7 @@ Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/1860-nod
 ### Nvidia Exporter
 Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/14574-nvidia-gpu-metrics/)
 
-## Dasboard applicatif
-### Kubernetes cluster
+## Dasboard Kubernetes cluster
 Permet de connaitre les données du cluster Kube, RAM, Pods, ... <br/>
 Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/16450-kubernetes-views-k3s-cluster/) compatible K3S
 
