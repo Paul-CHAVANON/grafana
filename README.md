@@ -33,11 +33,26 @@ Pour annalyser des données des VMs/serveurs
 </br>- [./nvidia_gpu_exporter/docker-compose.yml](https://github.com/Paul-CHAVANON/grafana/blob/main/nvidia_gpu_exporter/docker-compose.yml)
 
 ### Configurer l'export de metrics Kube
-Récupérer le cetificat et tocken nécessaire sur le master node kube
+Récupérer le cetificat nécessaire sur le master node kube
 ```bash
 sudo cat /var/lib/rancher/k3s/server/tls/server-ca.crt
-sudo cat /var/lib/rancher/k3s/server/node-token
 ```
+
+Créer un ServiceAccount et un token
+```
+# 1. Créer le ServiceAccount
+kubectl create serviceaccount prometheus -n default --dry-run=client -o yaml | kubectl apply -f -
+
+# 2. Créer un ClusterRoleBinding robuste
+# Cela lie le ServiceAccount au rôle 'system:kubelet-api-admin' ou 'view'
+kubectl create clusterrolebinding prometheus-cluster-view \
+  --clusterrole=cluster-admin \
+  --serviceaccount=default:prometheus
+# 3. Créer le token
+kubectl create token prometheus
+```
+
+
 Puis le configurer dans prometheus
 ```Docker-compose.yml
   - job_name: 'k3s-kubelet'
