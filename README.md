@@ -52,8 +52,7 @@ sudo kubectl create clusterrolebinding prometheus-cluster-view \
 sudo kubectl create token prometheus
 ```
 
-
-Puis le configurer dans prometheus
+Puis le ajouter le token dans prometheus.yml
 ```Docker-compose.yml
   - job_name: 'k3s-kubelet'
     scheme: https
