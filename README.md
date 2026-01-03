@@ -26,9 +26,9 @@ sudo docker compose up -d
 ```
 Pour annalyser des perfomance GPU Nvidia
 </br>- ./nvidia_gpu_exporter/docker-compose.yml
-</br>Pour annalyser des données des VMs/serveurs
+</br></br>Pour annalyser des données des VMs/serveurs
 </br>- ./node_exporter/docker-compose.yml
-</br>Pour annlayser des données Kubernetes
+</br></br>Pour annlayser des données Kubernetes
 </br>- ./kube_exporter/docker-compose.yml
 
 
