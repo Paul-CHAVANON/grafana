@@ -34,7 +34,7 @@ Pour annalyser des données des VMs/serveurs
 
 ### Configurer l'export de metrics Kube
 Récupérer le cetificat et tocken nécessaire sur le master node kube
-```
+```bash
 sudo cat /var/lib/rancher/k3s/server/tls/server-ca.crt
 sudo cat /var/lib/rancher/k3s/server/node-token
 ```
