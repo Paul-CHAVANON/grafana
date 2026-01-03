@@ -12,7 +12,17 @@ Ce repository est composé en 3 parties
 
 
 ## Configuration fonctionelle de Grafana et prometheus
+### Installer Docker 
+Source : https://docs.docker.com/engine/install/ubuntu/
 
+### Installer Grafana
+Lancer un docker compose du fichier docker-compose.yml 
+Source : 
+
+### Installer des exporter
+
+
+### Configurer Grafana et Prometheus
 
 ## Dashboard infrastrucures
 
