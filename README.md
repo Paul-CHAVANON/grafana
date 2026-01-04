@@ -1,3 +1,6 @@
+# Projet soumis à licence
+Voir fichier LICENSE
+
 # Grafana
 ## Présentation
 Ce repository est composé en 3 parties
