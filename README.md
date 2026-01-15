@@ -35,14 +35,13 @@ Pour que Prometheus collecte des données il en faut de disponible, donc via doc
 <span style="text - decoration: underline;">Exemple 1</span> : Sur multipass j’ai 4 VM et je veux connaître l’espace disponible et la l’usage CPU, je fais donc un premier panel avec avec les Metrics des 4 VM en listant l’usage disk de chaque VM. J’aurais donc un tableau de 4 lignes indiquant l’espace disponible par VM.
 
 <span style="text - decoration: underline;">Exemple 2</span> : Mon serveur consomme 600w je peux donc faire une règle qui, 1 fait une moyenne de la consommation, 2 faire une règle qui définit le prix fois la consommation, l’un des panel de notre dashboard indiquera le coût de fonctionnement de notre serveur
+source : [https://grafana.com/grafana/dashboards/](https://grafana.com/grafana/dashboards/)
 
 **Exemple de maquette** : 
 
 ![Enter image alt description](Images/hvY_Image_1.png)
 
 Vous trouverez ici le site communautaire de grafana avec des dashboard réalisés par la communauté très pratique à utiliser et personnaliser.
-
-source : [https://grafana.com/grafana/dashboards/](https://grafana.com/grafana/dashboards/)
 
 ## Configuration fonctionnelle de Grafana et prometheus
 
