@@ -36,7 +36,8 @@ Pour que Prometheus collecte des données il en faut de disponible, donc via doc
 
 <span style="text - decoration: underline;">Exemple 2</span> : Mon serveur consomme 600w je peux donc faire une règle qui, 1 fait une moyenne de la consommation, 2 faire une règle qui définit le prix fois la consommation, l’un des panel de notre dashboard indiquera le coût de fonctionnement de notre serveur
 </br>
-Vous trouverez ici le site communautaire de grafana avec des dashboard réalisés par la communauté très pratique à utiliser et personnaliser.
+</br>
+Vous trouverez ci-dessous le site communautaire de grafana avec des dashboard réalisés par la communauté très pratique à utiliser et personnaliser.
 source : [https://grafana.com/grafana/dashboards/](https://grafana.com/grafana/dashboards/)
 
 **Exemple de maquette** : 
