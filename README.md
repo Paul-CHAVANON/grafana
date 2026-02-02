@@ -131,6 +131,11 @@ Source : [https://grafana.com/grafana/dashboards/1860-node-exporter-full/](https
 
 ![Enter image alt description](Images/zCb_Image_2.png)
 
+
+Source : [https://grafana.com/grafana/dashboards/13882-process-exporter-dashboard-with-treemap/](https://grafana.com/grafana/dashboards/13882-process-exporter-dashboard-with-treemap/)
+
+![Enter image alt description](Images/Idh_Image_4.png)
+
 ### Dashboard de Kube
 
 Les stats des nodes sont intéressantes mais nous cherchons à connaître les statistiques de kube, il faut donc utiliser les données exposé par K3S, il faut donc intégrer dans notre Prometheus la clef du master node K3S, les données sont chiffre donc non lisible par la méthode traditionnelle de Prometheus
