@@ -127,10 +127,13 @@ Source : [github.com/node_exporter/docker-compose.yml](https://github.com/Paul-C
 
 Une fois installé les premières remontées d'informations des nodes peuvent être observé via dashboard
 
+Pour analyser les ressources des nodes :
+
 Source : [https://grafana.com/grafana/dashboards/1860-node-exporter-full/](https://grafana.com/grafana/dashboards/1860-node-exporter-full/)
 
 ![Enter image alt description](Images/zCb_Image_2.png)
 
+Pour analyser des process précisément : 
 
 Source : [https://grafana.com/grafana/dashboards/13882-process-exporter-dashboard-with-treemap/](https://grafana.com/grafana/dashboards/13882-process-exporter-dashboard-with-treemap/)
 
