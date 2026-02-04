@@ -6,17 +6,42 @@ Projet soumis à licence Voir fichier ./[LICENSE](https://github.com/Paul-CHAVAN
 
 Ce repository est composé en 4 parties
 
-1. ***Compréhension simplifié*** de Multipass, Kube, Grafana & Prometheus pour ce POC
+1. ***Contexte***
 
-- Pourquoi utiliser une plateforme de virtualisation comme **Multipass**
-- Pourquoi choisir K3S pour cet POC
-- Comment collecter les données et les interpréter
+2. ***Compréhension simplifié*** de Multipass, Kube, Grafana & Prometheus pour ce POC
 
-2. ***Configuration fonctionnelle de Grafana et prometheus*** Explication fonctionnelle de grafana et prometheus
+1. Pourquoi utiliser une plateforme de virtualisation comme **Multipass**
 
-3. ***Dashboard infrastructure*** monitoring de serveurs et infrastructures
+2. Pourquoi choisir K3S pour cet POC
 
-4. ***Dashboard Kube*** 
+3. Comment collecter les données et les interpréter
+
+3. ***Configuration fonctionnelle de Grafana et prometheus*** Explication fonctionnelle de grafana et prometheus
+
+4. ***Dashboard infrastructure*** monitoring de serveurs et services
+
+5. ***Dashboard Kube***
+
+## Contexte
+
+### Objectif du projet
+
+Dans l’objectif d'augmenter notre champ de vision sur les données d’états, de consommations des ressources d’infrastructures serveurs et des services. Pour une équipe d’exploitation technique sur des environnement de prod  et pré-prod.
+
+Il est nécessaire d’obtenir une solution de monitoring adaptée au mieux à notre usage. Cela nous permet de diminuer de manière indirecte notre dette technique.
+
+- Détection des dérives
+
+- Réduction du temps de diagnostic ([MTTR](https://fr.mainsim.com/academy/mttr/), etc…)
+
+- Priorisation rationnelle, décisions basées sur des données réelles.
+
+- Historique technique
+
+### Raison du projet
+
+Pour un projet d’école (RNCP 7 Architecte SI) qui consiste à réaliser une refonte complète d’un SI, il est nécessaire de refaire l’architecture SI. Des solutions technique moderne sont nécessaire, voir document de proposition commercial lié au projet :
+
 
 ## Compréhension simplifié
 
@@ -35,15 +60,14 @@ Pour que Prometheus collecte des données il en faut de disponible, donc via doc
 <span style="text - decoration: underline;">Exemple 1</span> : Sur multipass j’ai 4 VM et je veux connaître l’espace disponible et la l’usage CPU, je fais donc un premier panel avec avec les Metrics des 4 VM en listant l’usage disk de chaque VM. J’aurais donc un tableau de 4 lignes indiquant l’espace disponible par VM.
 
 <span style="text - decoration: underline;">Exemple 2</span> : Mon serveur consomme 600w je peux donc faire une règle qui, 1 fait une moyenne de la consommation, 2 faire une règle qui définit le prix fois la consommation, l’un des panel de notre dashboard indiquera le coût de fonctionnement de notre serveur
-</br>
-</br>
-Vous trouverez ci-dessous le site communautaire de grafana avec des dashboard réalisés par la communauté très pratique à utiliser et personnaliser.
-source : [https://grafana.com/grafana/dashboards/](https://grafana.com/grafana/dashboards/)
 
 **Exemple de maquette** : 
 
-![Enter image alt description](Images/hvY_Image_1.png)
+![Enter image alt description](Images/uaz_Image_1.png)
 
+Vous trouverez ici le site communautaire de grafana avec des dashboard réalisés par la communauté très pratique à utiliser et personnaliser.
+
+source : [https://grafana.com/grafana/dashboards/](https://grafana.com/grafana/dashboards/)
 
 ## Configuration fonctionnelle de Grafana et prometheus
 
@@ -121,21 +145,24 @@ Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/16450-ku
 
 ### Dashboard des nodes
 
-Ensuite ajouter Installer les exporter de données sur les nodes
+#### Pour analyser les ressources des nodes :
 
 Source : [github.com/node_exporter/docker-compose.yml](https://github.com/Paul-CHAVANON/grafana/blob/main/node_exporter/docker-compose.yml)
 
 Une fois installé les premières remontées d'informations des nodes peuvent être observé via dashboard
 
-#### Pour analyser les ressources des nodes :
-
 Source : [https://grafana.com/grafana/dashboards/1860-node-exporter-full/](https://grafana.com/grafana/dashboards/1860-node-exporter-full/)
 
-![Enter image alt description](Images/zCb_Image_2.png)
+![Enter image alt description](Images/gHI_Image_2.png)
 
 #### Pour analyser des process précisément :
-Source : [https://github.com/ncabatoff/process-exporter](https://github.com/ncabatoff/process-exporter)</br>
-Source : [https://grafana.com/grafana/dashboards/13882-process-exporter-dashboard-with-treemap/](https://grafana.com/grafana/dashboards/13882-process-exporter-dashboard-with-treemap/)</br>
+
+Objectif : Ce dashboard permet une visualisation directe des processus et de leur consommation pour permettre un debug facilité. Exemple : un processus en erreur qui recharge continuellement ce qui peut amener à une surconsommation, ralentissement et des pannes de serveurs ou de services par la suite.
+
+Contrairement au Node exporter full qui indique l’état de la VM en détail et non celle de processus avec finesse.
+
+Source : [https://github.com/ncabatoff/process-exporter](https://github.com/ncabatoff/process-exporter) \
+Source : [https://grafana.com/grafana/dashboards/13882-process-exporter-dashboard-with-treemap/](https://grafana.com/grafana/dashboards/13882-process-exporter-dashboard-with-treemap/)
 
 ![Enter image alt description](Images/Idh_Image_4.png)
 
@@ -147,7 +174,7 @@ Source (Readme) : [github.com/configurer-](https://github.com/Paul-CHAVANON/graf
 
 Source (Dashboard) : [grafana.com/dashboards/kubernetes-views-k3s-cluster/](https://grafana.com/grafana/dashboards/16450-kubernetes-views-k3s-cluster/)
 
-![Enter image alt description](Images/4cy_Image_3.png)
+![Enter image alt description](Images/8av_Image_4.png)
 
 Bonus : Nvidia Exporter
 
