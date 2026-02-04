@@ -9,11 +9,8 @@ Ce repository est composé en 4 parties
 1. ***Contexte***
 
 2. ***Compréhension simplifié*** de Multipass, Kube, Grafana & Prometheus pour ce POC
-
 - Pourquoi utiliser une plateforme de virtualisation comme **Multipass**
-
 - Pourquoi choisir K3S pour cet POC
-
 - Comment collecter les données et les interpréter
 
 3. ***Configuration fonctionnelle de Grafana et prometheus*** Explication fonctionnelle de grafana et prometheus
