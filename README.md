@@ -174,7 +174,7 @@ Source (Readme) : [github.com/configurer-](https://github.com/Paul-CHAVANON/graf
 
 Source (Dashboard) : [grafana.com/dashboards/kubernetes-views-k3s-cluster/](https://grafana.com/grafana/dashboards/16450-kubernetes-views-k3s-cluster/)
 
-![Enter image alt description](Images/8av_Image_4.png)
+![Enter image alt description](Images/Idh_Image_4.png)
 
 Bonus : Nvidia Exporter
 
