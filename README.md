@@ -63,7 +63,7 @@ Pour que Prometheus collecte des données il en faut de disponible, donc via doc
 
 **Exemple de maquette** : 
 
-![Enter image alt description](Images/uaz_Image_1.png)
+![Enter image alt description](Images/hvY_Image_1.png)
 
 Vous trouverez ici le site communautaire de grafana avec des dashboard réalisés par la communauté très pratique à utiliser et personnaliser.
 
@@ -153,7 +153,7 @@ Une fois installé les premières remontées d'informations des nodes peuvent ê
 
 Source : [https://grafana.com/grafana/dashboards/1860-node-exporter-full/](https://grafana.com/grafana/dashboards/1860-node-exporter-full/)
 
-![Enter image alt description](Images/gHI_Image_2.png)
+![Enter image alt description](Images/zCb_Image_2.png)
 
 #### Pour analyser des process précisément :
 
