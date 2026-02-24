@@ -176,3 +176,4 @@ Source (Dashboard) : [grafana.com/dashboards/kubernetes-views-k3s-cluster/](http
 Bonus : Nvidia Exporter
 
 Source : [Grafana-dashboard.com](https://grafana.com/grafana/dashboards/14574-nvidia-gpu-metrics/)
+![Enter image alt description](Images/gpu_Image_5.png)
